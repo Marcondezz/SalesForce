@@ -24,10 +24,10 @@ const Pagina_Inicial = () => {
                     <h1 className="divOne-tituloPrincipal">Customer 360</h1>
                     <div className="organizacao-divOne">
                         <div className="divOne-OrganizacaoText">
-                        <p className="divOne-textoPrincipal">A Saleforcy é uma empresa de softwaras que foa na solução de gerenciamenta de relacionameto 
-                                                            pra aproximar epresas e pesoas.</p>
-                        <p className="divOne-textoPrincipal">É um platfora de CRM integrada que ofrece a todos os departmentos uma vão 
-                                                            únic e compartilhada de cda cliente.</p>
+                        <p className="divOne-textoPrincipal">A Saleforce é uma empresa de softwares que foca na solução de gerenciamento de relacionameto 
+                                                            para aproximar empresas e pessoas.</p>
+                        <p className="divOne-textoPrincipal">É uma platforma de CRM integrada que oferece a todos os departamentos uma visão 
+                                                            única e compartilhada de cada cliente.</p>
                         </div>
                         <div className="divOne-OrgImagemCustomer">
                             <img className="divOne-imagemCustomer"src={customer.src}/>
