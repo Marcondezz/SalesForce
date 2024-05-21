@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital,wght@0,400..700;1,400..700&family=Righteous&display=swap');
+:root{
+    --azul-escuro: #1D3557;
+    --azul-claro: #0176D3;
+    --branco: #F1FAEE;
+   --titulo: "Righteous", "Sans-serif";
+   --texto-comum: "Alata", "Sans-serif";
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+@media (min-width: 320px)and (max-width: 439px){
+    .secao-sucesso{
+        width: 100vw;
+        height: 25rem;
+        background-color: var(--azul-escuro);
+    }
+    .organizacao-complete{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: .5rem;
+    }
+    .organizacao-TextoComplete{
+        display: flex;
+        justify-content: center;
+    }
+    .titulo-sucesso{
+        color: var(--branco);
+        margin-block: 1rem;
+    }
+    .complete-sucesso{
+        width: 9vw;
+    }
+    .texto-sucesso{
+        color: var(--branco);
+        text-align: center;
+    }
+    .retorno-sucesso{
+        display: flex;
+        justify-content: center;
+        margin-top: 6vw;
+        font-size: 5vw;
+        color: var(--branco);
+    }
+}
+@media (min-width: 440px)and (max-width: 580px){
+    .secao-sucesso{
+        width: 100vw;
+        height: 25rem;
+        background-color: var(--azul-escuro);
+    }
+    .organizacao-complete{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: .5rem;
+    }
+    .organizacao-TextoComplete{
+        display: flex;
+        justify-content: center;
+    }
+    .titulo-sucesso{
+        color: var(--branco);
+        margin-block: 1rem;
+    }
+    .complete-sucesso{
+        width: 2rem;
+    }
+    .texto-sucesso{
+        color: var(--branco);
+        text-align: center;
+        font-size: 6vw;
+    }
+    .retorno-sucesso{
+        display: flex;
+        justify-content: center;
+        margin-top: 6vw;
+        font-size: 5vw;
+        color: var(--branco);
+    }
+}
+@media (min-width: 720px) and (max-width: 1024px){
+    .organizacao-secaoSucesso{
+        width: 80vw;
+        height: 30vw;
+        background-color: #cce3de;
+    }
+}
+@media (min-width: 1025px) and (max-width: 1440px){}

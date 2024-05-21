@@ -4,11 +4,12 @@ import Trail from "./TrailFinder/page"
 import Persons from "./Personagens/page"
 import Quest from "./Questionario/page"
 import Desen from "./Desenvolvedores/page"
+import Sucesso from "./Sucesso/page"
 
 const Home = () =>{
     return(
       <>
-      <Pagina_inicial />
+      <Sucesso />
       </>
     )
   }
