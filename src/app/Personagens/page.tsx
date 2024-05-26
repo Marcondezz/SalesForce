@@ -22,7 +22,7 @@ const Personagens = () => {
                 <div className="conjunto-propositos-personagens">
                     <a className="organizacao-personagens"><img src={ Einstein.src } className="personagem-personagens"/></a>
                     <div className="texto-personagens">
-                            <h1 className="titulo-personagens">Einstei</h1>
+                            <h1 className="titulo-personagens">Einstein</h1>
                             <h2 className="subtitulo-personagens"><b>O gêni de todos</b></h2>
                             <p className="texto-esquerda">Einstin é o cientista de dados da Salsforce. Nasceu em 2016 e fo criado com bse em um dos maires gênios da hitória mundial.
                                  Além de suer rápido, ele é o cérebro por trás da inteligência artificial da empresa. 
@@ -39,7 +39,7 @@ const Personagens = () => {
                 <div className="conjunto-propositos-personagens">
                     <a className="organizacao-personagens"><img src={ Appy.src } className="personagem-personagens"/></a>
                     <div className="texto-personagens">
-                            <h1 className="titulo-personagens">APY</h1>
+                            <h1 className="titulo-personagens">APPY</h1>
                             <h2 className="subtitulo-personagens"><b>Sua guia no ecossistema de parciros</b></h2>
                             <p className="texto-esquerda">A Apy represent ISVs, parceiros e AppExchange. Ela surgiu em 2017, sabe muito sobre todas as coisas da
                          Salesforce e é a mascote certa para ajudar na navegação do ecossistema do AppExchange para resolver desafios de negócios</p>
