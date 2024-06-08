@@ -24,6 +24,13 @@
         padding: 6vw;
         background-color: #cce3de;
     }
+    .edicao-sucesso{
+        display: flex;
+    }
+    .bolinhaSucesso{
+        width: 10vw;
+        height: 6vh;
+    }
     .texto-sucesso{
         display: flex;
         justify-content: center;
@@ -70,6 +77,15 @@
         color: white;
         list-style: none;
     }
+    .texto-imagem{
+        color: white;
+        font-size: 1.7em;
+    }
+    .textodois-sucesso{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 @media (min-width: 440px)and (max-width: 580px){
     .OrgTotal_sucesso{
@@ -81,6 +97,21 @@
         width: 85vw;
         padding: 6vw;
         background-color: #cce3de;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .edicao-sucesso{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: .5rem;
+    }
+    .bolinhaSucesso{
+        width: 5vw;
+        height: 4vh;
+        margin-top: -20px;
     }
     .texto-sucesso{
         display: flex;
@@ -91,8 +122,8 @@
         margin-bottom: 4vw;
     }
     .layout{
-        width: 70vw;
-        height: 20rem;
+        width: 60vw;
+        height: 18rem;
         background-color: #032D60;
         border-radius: 20px;
     }
@@ -102,7 +133,7 @@
         align-items: center;
     }
     .formatacao-imagem-paginaInicial{
-        width: 18rem;
+        width: 14rem;
     }
     .texto-imagem-paginaInicial{
         display: flex;
@@ -127,6 +158,11 @@
         gap: 4vw;
         margin-block: 4vw;
     }
+    .textodois-sucesso{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 @media (min-width: 720px) and (max-width: 1024px){
     .OrgTotal_sucesso{
@@ -138,6 +174,17 @@
         width: 65vw;
         padding: 2vw;
         background-color: #cce3de;
+    }
+    .edicao-sucesso{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: .5rem;
+    }
+    .bolinhaSucesso{
+        width: 3vw;
+        height: 4vh;
+        margin-top: -15px;
     }
     .texto-sucesso{
         display: flex;
@@ -153,8 +200,8 @@
         align-items: center;
     }
     .layout{
-        width: 20rem;
-        height: 20rem;
+        width: 10.5rem;
+        height: 10.5rem;
         background-color: #032D60;
         border-radius: 20px;
     }
@@ -164,7 +211,7 @@
         align-items: center;
     }
     .formatacao-imagem-paginaInicial{
-        width: 18rem;
+        width: 8rem;
     }
     .texto-imagem-paginaInicial{
         list-style: none;
@@ -176,11 +223,22 @@
         color:var(--branco);
         font-family: var(--titulo);
     }
+    .doistexto-sucesso{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: .5rem;
+    }
     .layout-paginaInicial{
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-        row-gap: 1rem;
+        grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+        row-gap: .5rem;
         margin-block: 2vh;
+    }
+    .textodois-sucesso{
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 @media (min-width: 1025px) and (max-width: 1440px){
@@ -196,6 +254,17 @@
         width: 65vw;
         padding: 2vw;
         background-color: #cce3de;
+    }
+    .edicao-sucesso{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: .5rem;
+    }
+    .bolinhaSucesso{
+        width: 3vw;
+        height: 5vh;
+        margin-top: -20px;
     }
     .texto-sucesso{
         display: flex;
@@ -216,6 +285,10 @@
         background-color: #032D60;
         border-radius: 20px;
     }
+    .layout:hover{
+        width: 14rem;
+        height: 13rem;
+    }
     .layout-imagem-paginaInicial{
         display: flex;
         justify-content: center;
@@ -223,6 +296,10 @@
     }
     .formatacao-imagem-paginaInicial{
         width: 9rem;
+    }
+    .formatacao-imagem-paginaInicial:hover{
+        width: 11rem;
+        transition: 2ms;
     }
     .texto-imagem-paginaInicial{
         list-style: none;
@@ -239,5 +316,10 @@
         grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
         row-gap: 1rem;
         margin-block: 2vh;
+    }
+    .textodois-sucesso{
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
