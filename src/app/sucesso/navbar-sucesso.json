@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "src": "/assets/sucesso/slack.svg",
+        "text": "SLACK"
+    },
+    {
+        "id": 2,
+        "src": "/assets/sucesso/einstein.svg",
+        "text": "EINSTEIN"
+    },
+    {
+        "id": 3,
+        "src": "/assets/sucesso/tableau.svg",
+        "text": "TABLEAU"
+    }
+]

@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital,wght@0,400..700;1,400..700&family=Righteous&display=swap');
+:root{
+    --azul-escuro: #1D3557;
+    --azul-claro: #0176D3;
+    --branco: #F1FAEE;
+   --titulo: "Righteous", "Sans-serif";
+   --texto-comum: "Alata", "Sans-serif";
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+@media (min-width: 320px)and (max-width: 439px){
+    .OrgTotal_sucesso{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .Org-sucesso{
+        width: 85vw;
+        padding: 6vw;
+        background-color: #cce3de;
+    }
+    .texto-sucesso{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: var(--texto-comum);
+        font-size: 5vw;
+        margin-bottom: 4vw;
+    }
+    .layout-paginaInicial{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 4vw;
+        margin-block: 4vw;
+    }
+    .layout{
+        width: 70vw;
+        height: 20em;
+        background-color: #032D60;
+        border-radius: 20px;
+    }
+    .layout-imagem-paginaInicial{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .formatacao-imagem-paginaInicial{
+        width: 60vw;
+    }
+    .texto-imagem-paginaInicial{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Righteous", sans-serif;
+        color: white;
+        list-style: none;
+    }
+    .texto-imagem-paginaInicial{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Righteous", sans-serif;
+        color: white;
+        list-style: none;
+    }
+}
+@media (min-width: 440px)and (max-width: 580px){
+    .OrgTotal_sucesso{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .Org-sucesso{
+        width: 85vw;
+        padding: 6vw;
+        background-color: #cce3de;
+    }
+    .texto-sucesso{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: var(--texto-comum);
+        font-size: 3.5vw;
+        margin-bottom: 4vw;
+    }
+    .layout{
+        width: 70vw;
+        height: 20rem;
+        background-color: #032D60;
+        border-radius: 20px;
+    }
+    .layout-imagem-paginaInicial{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .formatacao-imagem-paginaInicial{
+        width: 18rem;
+    }
+    .texto-imagem-paginaInicial{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Righteous", sans-serif;
+        color: white;
+        list-style: none;
+    }
+    .texto-imagem{
+        color: white;
+        font-size: 1.7em;
+    }
+    .texto-imagem:visited{
+        color: white;
+    }
+    .layout-paginaInicial{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 4vw;
+        margin-block: 4vw;
+    }
+}
+@media (min-width: 720px) and (max-width: 1024px){
+    .OrgTotal_sucesso{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .Org-sucesso{
+        width: 65vw;
+        padding: 2vw;
+        background-color: #cce3de;
+    }
+    .texto-sucesso{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: var(--texto-comum);
+        font-size: 2.5vw;
+        margin-bottom: 2vw;
+    }
+    .imagens-paginaInicial{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .layout{
+        width: 20rem;
+        height: 20rem;
+        background-color: #032D60;
+        border-radius: 20px;
+    }
+    .layout-imagem-paginaInicial{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .formatacao-imagem-paginaInicial{
+        width: 18rem;
+    }
+    .texto-imagem-paginaInicial{
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .texto-imagem{
+        color:var(--branco);
+        font-family: var(--titulo);
+    }
+    .layout-paginaInicial{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        row-gap: 1rem;
+        margin-block: 2vh;
+    }
+}
+@media (min-width: 1025px) and (max-width: 1440px){
+    .OrgTotal_sucesso{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .OrgTotal_sucesso{
+        display: flex;
+    }
+    .Org-sucesso{
+        width: 65vw;
+        padding: 2vw;
+        background-color: #cce3de;
+    }
+    .texto-sucesso{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: var(--texto-comum);
+        font-size: 2vw;
+        margin-bottom: 2vw;
+    }
+    .imagens-paginaInicial{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .layout{
+        width: 13rem;
+        height: 12rem;
+        background-color: #032D60;
+        border-radius: 20px;
+    }
+    .layout-imagem-paginaInicial{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .formatacao-imagem-paginaInicial{
+        width: 9rem;
+    }
+    .texto-imagem-paginaInicial{
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .texto-imagem{
+        color:var(--branco);
+        font-family: var(--titulo);
+    }
+    .layout-paginaInicial{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+        row-gap: 1rem;
+        margin-block: 2vh;
+    }
+}
