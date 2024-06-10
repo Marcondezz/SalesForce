@@ -22,6 +22,7 @@
     .Org-sucesso{
         width: 85vw;
         padding: 6vw;
+        margin-block: 5rem;
         background-color: #cce3de;
     }
     .edicao-sucesso{
@@ -97,6 +98,7 @@
         width: 85vw;
         padding: 6vw;
         background-color: #cce3de;
+        margin-block: 5rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -122,8 +124,8 @@
         margin-bottom: 4vw;
     }
     .layout{
-        width: 60vw;
-        height: 18rem;
+        width: 52vw;
+        height: 15rem;
         background-color: #032D60;
         border-radius: 20px;
     }
@@ -133,7 +135,7 @@
         align-items: center;
     }
     .formatacao-imagem-paginaInicial{
-        width: 14rem;
+        width: 10rem;
     }
     .texto-imagem-paginaInicial{
         display: flex;
@@ -173,6 +175,7 @@
     .Org-sucesso{
         width: 65vw;
         padding: 2vw;
+        margin-block: 5rem;
         background-color: #cce3de;
     }
     .edicao-sucesso{
@@ -253,6 +256,7 @@
     .Org-sucesso{
         width: 65vw;
         padding: 2vw;
+        margin-block: 5rem;
         background-color: #cce3de;
     }
     .edicao-sucesso{

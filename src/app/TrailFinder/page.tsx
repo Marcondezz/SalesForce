@@ -31,9 +31,10 @@ const TrailFinder = () => {
     
             if (response.ok) {
                 const text = await response.text();
-                const json = text ? JSON.parse(text) : {}; // Verifica se o texto da resposta não está vazio antes de fazer a análise JSON
+                const json = text ? JSON.parse(text) : {}; 
                 console.log(json);
-                setFormSubmitted(true); // Define que o formulário foi enviado com sucesso
+                setFormSubmitted(true); 
+                window.location.href = "/sucesso"; 
             } else {
                 console.error('Erro ao enviar formulário:', response.statusText);
             }
@@ -62,7 +63,7 @@ const TrailFinder = () => {
                     <input className="input" name="email" type="text" placeholder="E-mail" value={data.email} onChange={(e) => {handleFormEdit(e, "email")}}/>
                 </div>
                 <div className="field">
-                <label className="label-trailfinder"htmlFor="cargo">Qual seu cargo:</label>
+                <label className="label-trailfinder" htmlFor="cargo">Qual seu cargo:</label>
                 <select id="cargo" name="cargo" value={data.cargo} onChange={(e) => {handleFormEdit(e, "cargo")}}>
                     <option value="">Qual?</option>
                     <option value="Assistente">Assistente</option>
