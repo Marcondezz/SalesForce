@@ -21,12 +21,12 @@ const sucesso = () =>{
                             <h3 className="textodois-sucesso">Enquanto aguarda o retorno, confira as opções recomendadas para suas características:</h3>
                             <br></br>
                         <div>
-                            <div className="layout-paginaInicial" >
+                            <div className="layout-sucesso" >
                             {imagens.map ((item2 : dados) =>(
                                     
-                                <div className="imagens-paginaInicial">
+                                <div className="imagens-sucesso">
                                     <div className="layout">
-                                        <a className="layout-imagem-paginaInicial"><img className="formatacao-imagem-paginaInicial" src={item2.src} /></a>
+                                        <a className="layout-imagem-sucesso"><img className="formatacao-imagem-sucesso" src={item2.src} /></a>
                                         <ul className="texto-imagem-paginaInicial">
                                             <Link href='/Personagens'><li className="texto-imagem">{item2.text}</li></Link>
                                         </ul>

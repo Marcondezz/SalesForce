@@ -6,6 +6,7 @@ const TrailFinder = () => {
     const [data, setData] = useState({
         name: '',
         email: '',
+        data:'',
         cargo: '',
         tipoEmpresa: '',
         setor: ''
@@ -61,6 +62,10 @@ const TrailFinder = () => {
                 <div className="field">
                     <label className="label-trailfinder" htmlFor="email">Informe seu e-mail:</label>
                     <input className="input" name="email" type="text" placeholder="E-mail" value={data.email} onChange={(e) => {handleFormEdit(e, "email")}}/>
+                </div>
+                <div className="field">
+                    <label className="label-trailfinder" htmlFor="data">Data:</label>
+                    <input className="input" name="data" type="date" placeholder="Data" value={data.email} onChange={(e) => {handleFormEdit(e, "data")}}/>
                 </div>
                 <div className="field">
                 <label className="label-trailfinder" htmlFor="cargo">Qual seu cargo:</label>

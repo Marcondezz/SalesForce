@@ -386,11 +386,17 @@
         display: flex;
         justify-content: center;
         text-align: center;
-        width: 23.5vw;
+        width: 22vw;
         font-size: 2rem;
         white-space: pre;
         color: var(--branco);
         font-family: var(--texto-comum);
+    }
+    .opcoes-header:hover{
+        color: var(--azul-escuro);
+        border: 2px solid var(--branco);
+        background-color: var(--branco);
+        padding: .5rem;
     }
     .menu-header{
         margin-left: 6vw;

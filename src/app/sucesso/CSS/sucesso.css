@@ -40,7 +40,7 @@
         font-size: 5vw;
         margin-bottom: 4vw;
     }
-    .layout-paginaInicial{
+    .layout-sucesso{
         display: flex;
         justify-content: center;
         align-items: center;
@@ -54,12 +54,12 @@
         background-color: #032D60;
         border-radius: 20px;
     }
-    .layout-imagem-paginaInicial{
+    .layout-imagem-sucesso{
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    .formatacao-imagem-paginaInicial{
+    .formatacao-imagem-sucesso{
         width: 60vw;
     }
     .texto-imagem-paginaInicial{
@@ -129,12 +129,12 @@
         background-color: #032D60;
         border-radius: 20px;
     }
-    .layout-imagem-paginaInicial{
+    .layout-imagem-sucesso{
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    .formatacao-imagem-paginaInicial{
+    .formatacao-imagem-sucesso{
         width: 10rem;
     }
     .texto-imagem-paginaInicial{
@@ -152,7 +152,7 @@
     .texto-imagem:visited{
         color: white;
     }
-    .layout-paginaInicial{
+    .layout-sucesso{
         display: flex;
         justify-content: center;
         align-items: center;
@@ -197,7 +197,7 @@
         font-size: 2.5vw;
         margin-bottom: 2vw;
     }
-    .imagens-paginaInicial{
+    .imagens-sucesso{
         display: flex;
         justify-content: center;
         align-items: center;
@@ -208,12 +208,12 @@
         background-color: #032D60;
         border-radius: 20px;
     }
-    .layout-imagem-paginaInicial{
+    .layout-imagem-sucesso{
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    .formatacao-imagem-paginaInicial{
+    .formatacao-imagem-sucesso{
         width: 8rem;
     }
     .texto-imagem-paginaInicial{
@@ -232,7 +232,7 @@
         align-items: center;
         gap: .5rem;
     }
-    .layout-paginaInicial{
+    .layout-sucesso{
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
         row-gap: .5rem;
@@ -278,7 +278,7 @@
         font-size: 2vw;
         margin-bottom: 2vw;
     }
-    .imagens-paginaInicial{
+    .imagens-sucesso{
         display: flex;
         justify-content: center;
         align-items: center;
@@ -293,15 +293,15 @@
         width: 14rem;
         height: 13rem;
     }
-    .layout-imagem-paginaInicial{
+    .layout-imagem-sucesso{
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    .formatacao-imagem-paginaInicial{
+    .formatacao-imagem-sucesso{
         width: 9rem;
     }
-    .formatacao-imagem-paginaInicial:hover{
+    .formatacao-imagem-sucesso:hover{
         width: 11rem;
         transition: 2ms;
     }
@@ -315,7 +315,90 @@
         color:var(--branco);
         font-family: var(--titulo);
     }
-    .layout-paginaInicial{
+    .layout-sucesso{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+        row-gap: 1rem;
+        margin-block: 2vh;
+    }
+    .textodois-sucesso{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media (min-width: 1441px) and (max-width: 1950px){
+    .OrgTotal_sucesso{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .OrgTotal_sucesso{
+        display: flex;
+    }
+    .Org-sucesso{
+        width: 65vw;
+        padding: 2vw;
+        margin-block: 5rem;
+        background-color: #cce3de;
+    }
+    .edicao-sucesso{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: .5rem;
+    }
+    .bolinhaSucesso{
+        width: 3vw;
+        height: 5vh;
+        margin-top: -20px;
+    }
+    .texto-sucesso{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: var(--texto-comum);
+        font-size: 2vw;
+        margin-bottom: 2vw;
+    }
+    .imagens-sucesso{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .layout{
+        width: 13rem;
+        height: 12rem;
+        background-color: #032D60;
+        border-radius: 20px;
+    }
+    .layout:hover{
+        width: 14rem;
+        height: 13rem;
+    }
+    .layout-imagem-sucesso{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .formatacao-imagem-sucesso{
+        width: 9rem;
+    }
+    .formatacao-imagem-sucesso:hover{
+        width: 11rem;
+        transition: 2ms;
+    }
+    .texto-imagem-paginaInicial{
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .texto-imagem{
+        color:var(--branco);
+        font-family: var(--titulo);
+    }
+    .layout-sucesso{
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
         row-gap: 1rem;
