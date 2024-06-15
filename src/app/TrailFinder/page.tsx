@@ -79,7 +79,7 @@ const TrailFinder = () => {
                 </div>
                 <div className="field">
                     <label className="label-trailfinder" htmlFor="data">Data:</label>
-                    <input className="input" name="data" type="date" placeholder="Data" value={data.email} onChange={(e) => {handleFormEdit(e, "data")}}/>
+                    <input className="input" name="data" type="date" placeholder="Data" value={data.data} onChange={(e) => {handleFormEdit(e, "data")}}/>
                 </div>
                 <div className="field">
                 <label className="label-trailfinder" htmlFor="cargo">Qual seu cargo:</label>
