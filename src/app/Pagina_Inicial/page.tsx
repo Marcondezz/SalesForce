@@ -79,9 +79,11 @@ const Pagina_Inicial = () => {
                         ))}
                         </div>
             </section>
+            <div className="org_linkPaginaInicial">
             <Link href='/Personagens'>
             <h1 className="significado-personagens">Veja o significado dos personagens</h1>
             </Link>
+            </div>
         </>
     )
 }

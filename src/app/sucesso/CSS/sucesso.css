@@ -266,8 +266,8 @@
         gap: .5rem;
     }
     .bolinhaSucesso{
-        width: 3vw;
-        height: 5vh;
+        width: 2.5vw;
+        height: 4.5vh;
         margin-top: -20px;
     }
     .texto-sucesso{
@@ -404,6 +404,7 @@
         grid-template-columns: repeat(auto-fit, minmax(15rem, 21rem));
         justify-content: center;
         margin-block: 2vh;
+        
     }
     .textodois-sucesso{
         display: flex;

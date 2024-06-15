@@ -20,7 +20,7 @@ const sucesso = () =>{
                             <h4 className="textodois-sucesso">Retornaremos com a resposta em breve</h4>
                             <h3 className="textodois-sucesso">Enquanto aguarda o retorno, confira as opções recomendadas para suas características:</h3>
                             <br></br>
-                        <div>
+                        <div className="org-opcoesSucesso">
                             <div className="layout-sucesso" >
                             {imagens.map ((item2 : dados) =>(
                                     

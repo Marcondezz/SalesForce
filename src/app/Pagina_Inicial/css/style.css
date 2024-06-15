@@ -330,12 +330,27 @@
     }
     .significado-personagens{
         font-size: 2vw;
+        width: 27rem;
         color: var(--azul-claro);
         display: flex;
         justify-content: center;
         align-items: center;
         font-family: var(--titulo);
         margin-block: 2vw;
+    }
+    .significado-personagens:hover{
+    
+        border: 1px solid var(--azul-escuro);
+        padding-block: 10px;
+        color: var(--branco);
+        border-radius: 50px;
+        background-color: var(--azul-escuro);
+        transition-duration: 1s;
+    }
+    .org_linkPaginaInicial{
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 @media (min-width: 1025px) and (max-width: 1440px){
@@ -406,8 +421,8 @@
         align-items: center;
     }
     .teste{
-    width: 20rem;
-    height: 20rem;
+    width: 16rem;
+    height: 16rem;
     background-color: #032D60;
     border-radius: 20px;
     }
@@ -418,12 +433,12 @@
     }
     .layout-paginaInicial{
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
         row-gap: 1rem;
         margin-block: 2vh;
     }
     .formatacao-imagem-paginaInicial{
-        width: 18rem;
+        width: 14rem;
     }
     .layout-imagem-paginaInicial{
         display: flex;
@@ -441,6 +456,9 @@
         font-family: var(--titulo);
     }
     .significado-personagens{
+        display: flex;
+        justify-content: center;
+        width: 27rem;
         font-size: 2vw;
         color: var(--azul-claro);
         display: flex;
@@ -448,6 +466,20 @@
         align-items: center;
         font-family: var(--titulo);
         margin-block: 2vw;
+    }
+    .significado-personagens:hover{
+    
+        border: 1px solid var(--azul-escuro);
+        padding-block: 10px;
+        color: var(--branco);
+        border-radius: 50px;
+        background-color: var(--azul-escuro);
+        transition-duration: 1s;
+    }
+    .org_linkPaginaInicial{
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 @media (min-width: 1441px){
@@ -555,10 +587,25 @@
     .significado-personagens{
         font-size: 2vw;
         color: var(--azul-claro);
+        width: 40rem;
         display: flex;
         justify-content: center;
         align-items: center;
         font-family: var(--titulo);
         margin-block: 2vw;
+    }
+    .significado-personagens:hover{
+    
+        border: 1px solid var(--azul-escuro);
+        padding-block: 10px;
+        color: var(--branco);
+        border-radius: 50px;
+        background-color: var(--azul-escuro);
+        transition-duration: 1s;
+    }
+    .org_linkPaginaInicial{
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
