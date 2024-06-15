@@ -215,3 +215,59 @@
         font-size: 1.4rem;
     }
 }
+@media (min-width: 1441px){
+    .navegacao-personagens{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-block: 2.5rem;
+    }
+    .conjunto-propositos-personagens{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--azul-escuro);
+        width: 85vw;
+        padding-inline: 1vw;
+        padding-block: .5vw;
+        border-radius: 20px;
+
+    }
+    .personagem-personagens{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 23vw;
+    }
+    .organizacao-personagens{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .texto-personagens{
+        padding: 4vw;
+    }
+    .titulo-personagens{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: var(--titulo);
+        color: var(--branco);
+        font-size: 3vw;
+    }
+    .subtitulo-personagens{
+        font-size: 2vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: var(--texto-comum);
+        color: var(--branco);
+        margin-bottom: 1vh;
+    }
+    .texto-esquerda{
+        font-family: var(--texto-comum);
+        color: var(--branco);
+        font-size: 1.4rem;
+    }
+
+}

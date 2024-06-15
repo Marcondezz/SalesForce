@@ -385,3 +385,99 @@
     align-items: center;
   }
 }
+@media (min-width: 1441px){
+  .card-formulario {
+    width: 42vw;
+    height: 75vh;
+    background: #e9e9f7;
+    border: 1px solid white;
+    box-shadow: 10px 10px 64px 0px rgba(180, 180, 207, 0.75);
+  -webkit-box-shadow: 10px 10px 64px 0px rgba(186, 186, 202, 0.75);
+  -moz-box-shadow: 10px 10px 64px 0px rgba(208, 208, 231, 0.75);
+  }
+  .form {
+    padding: 4vw;
+  }
+  
+  .card_header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2vw;
+    gap: 1vw;
+  }
+  .card svg-trailfinder {
+    color: #032d60;
+    display: flex;
+    align-items: center;
+  }
+  .button-trailfinder{
+    width: 20em;
+    height: 3em;
+    border-radius: 10px;
+    font-family: "Righteous";
+    background-color: #032d60;
+    margin-top: 10px;
+    font-size: 14px;
+    padding: 7px 12px;
+    height: auto;
+    font-weight: 500;
+    color: white;
+    border: none;
+    margin-left: 10%;
+  }
+  button:hover {
+    background-color: #B2BAC8;
+  }
+  
+  .form_heading {
+    display: flex;
+    align-items: center;
+    font-size: 2.5vw;
+    color: #032d60;
+    font-family: "Righteous";
+  }
+  
+  .field {
+    padding-bottom: .5vw;
+    align-items: center;
+    gap: .5rem;
+  }
+  .input {
+    border-radius: 5px;
+    background-color: #e9e9f7;
+    padding: 5px;
+    width: 30vw;
+    color: #7a7ab3;
+    border: 1px solid #032d60;
+  }
+  .interrogacao{
+    width: 1rem;
+  }
+  .input:focus-visible {
+    outline: 1px solid #aeaed6;
+  }
+  
+  .input::placeholder {
+    color: #bcbcdf;
+  }
+  
+  .label-trailfinder {
+    color: #B2BAC8;
+    font-size: 18px;
+    display: block;
+  }
+  .secao-total{
+    display: flex;
+    justify-content: center;
+    margin-block: 3vw;
+  }
+  .botao-submit{
+    display: flex;
+    justify-content: center;
+  }
+  .mensagem-sucesso{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

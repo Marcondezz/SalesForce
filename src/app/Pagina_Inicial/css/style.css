@@ -450,3 +450,115 @@
         margin-block: 2vw;
     }
 }
+@media (min-width: 1441px){
+    .divOne-paginaIncial{
+        background-color: var(--azul-escuro);
+        padding: 2vw;
+    }
+    .organizacao-divOne{
+        display: flex;
+        align-items: center;
+    }
+    .divOne-tituloPrincipal{
+        color: var(--branco);
+        margin-block: 1.5vh;
+        font-size: 6vw;
+        font-family: var(--titulo);
+        display: flex;
+        justify-content: center;
+    }
+    .divOne-OrganizacaoText{
+        padding-inline: 7vw;
+    }
+    .divOne-textoPrincipal{
+        font-family: var(--texto-comum);
+        color: var(--branco);
+        font-size: 2.5vw;
+    }
+    .divOne-OrgImagemCustomer{
+        display: flex;
+        justify-content: center;
+    }
+    .divOne-imagemCustomer{
+        width: 30vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .divTwo-organizacaoTituloPrincipal{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 2vw;
+        margin-bottom: 2vw;
+        padding-inline: 15vw;
+        font-family: var(--titulo);
+        color: var(--azul-claro)
+    }
+    .divTwo-tituloPrincipal{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2.5vw;
+    }
+    .organizacao-parcerias{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .divTwo-organizacaoimagemGympass{
+    }
+    .divTwo-imagemParcerias{
+        width: 24vw;
+    }
+    .texto-imagem-paginaInicial{
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .teste{
+    width: 20rem;
+    height: 20rem;
+    background-color: #032D60;
+    border-radius: 20px;
+    }
+    .imagens-paginaInicial{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .layout-paginaInicial{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        row-gap: 1rem;
+        margin-block: 2vh;
+    }
+    .formatacao-imagem-paginaInicial{
+        width: 18rem;
+    }
+    .layout-imagem-paginaInicial{
+        display: flex;
+        justify-content: center;
+    }
+    .layout-paginaInicial2{
+        display: none;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 4rem;
+    }
+    .texto-imagem{
+        color:var(--branco);
+        font-family: var(--titulo);
+    }
+    .significado-personagens{
+        font-size: 2vw;
+        color: var(--azul-claro);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: var(--titulo);
+        margin-block: 2vw;
+    }
+}

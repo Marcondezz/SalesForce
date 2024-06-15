@@ -325,9 +325,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        font-size: 1.5vw;
     }
 }
-@media (min-width: 1441px) and (max-width: 1950px){
+@media (min-width: 1441px) {
     .OrgTotal_sucesso{
         display: flex;
         justify-content: center;
@@ -337,7 +338,7 @@
         display: flex;
     }
     .Org-sucesso{
-        width: 65vw;
+        width: 80vw;
         padding: 2vw;
         margin-block: 5rem;
         background-color: #cce3de;
@@ -358,7 +359,7 @@
         justify-content: center;
         align-items: center;
         font-family: var(--texto-comum);
-        font-size: 2vw;
+        font-size: 3vw;
         margin-bottom: 2vw;
     }
     .imagens-sucesso{
@@ -367,14 +368,14 @@
         align-items: center;
     }
     .layout{
-        width: 13rem;
-        height: 12rem;
+        width: 20rem;
+        height: 17rem;
         background-color: #032D60;
         border-radius: 20px;
     }
     .layout:hover{
-        width: 14rem;
-        height: 13rem;
+        width: 22rem;
+        height: 19rem;
     }
     .layout-imagem-sucesso{
         display: flex;
@@ -382,10 +383,10 @@
         align-items: center;
     }
     .formatacao-imagem-sucesso{
-        width: 9rem;
+        width: 13rem;
     }
     .formatacao-imagem-sucesso:hover{
-        width: 11rem;
+        width: 15rem;
         transition: 2ms;
     }
     .texto-imagem-paginaInicial{
@@ -400,13 +401,14 @@
     }
     .layout-sucesso{
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
-        row-gap: 1rem;
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 21rem));
+        justify-content: center;
         margin-block: 2vh;
     }
     .textodois-sucesso{
         display: flex;
         justify-content: center;
         align-items: center;
+        font-size: 2vw;
     }
 }

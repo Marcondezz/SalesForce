@@ -1,6 +1,7 @@
 'use client'
 import { useState } from "react";
 import "./css/estilo.css";
+import interrogacao from "./../../../public/assets/formulario/interrogacao.png"
 
 const TrailFinder = () => {
     const [data, setData] = useState({
@@ -43,6 +44,19 @@ const TrailFinder = () => {
             console.error('Erro ao enviar formulário:', err);
         }
     }
+        function handleAlert1(){
+            alert(`Para Empresas do Tipo Serviços:
+                - Microempresa (ME): Até 9 empregados"
+                - Empresa de Pequeno Porte (EPP): De 10 a 49 empregados"
+                - Empresa de Médio Porte: De 50 a 99 empregados
+                - Grandes Empresas: 100 ou mais empregados
+                
+                Para Empresas do Tipo Indústria:
+                - Microempresa: Lucro menor ou igual a R$ 360 mil e com até 19 empregados
+                - Pequena empresa: Lucro maior que R$ 360 mil e menor ou igual a R$ 4,8 milhões e com até 99 empregados
+                - Média Empresa: Lucro maior que R$ 90 milhões e menor ou igual a R$ 300 milhões com até 499 empregados
+                - Grande empresa: Maior que R$ 300 milhões e com mais que 500 empregados`);
+        }
     
 
     return (
@@ -105,6 +119,7 @@ const TrailFinder = () => {
                     <option value="Varejo">Varejo</option>
                     <option value="Tecnologia">Tecnologia</option>
                 </select>
+                <img className="interrogacao" src={interrogacao.src} onClick={handleAlert1} />
                 </div>
                 <div className="botao-submit">
                     <button className="button-trailfinder" type="submit">ENVIE</button>

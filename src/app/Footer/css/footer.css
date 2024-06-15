@@ -628,5 +628,159 @@
     width: 2.8vw;
   }
 }
+@media (min-width: 1441px){
+  .div-footer-principal{
+    background-color: #1D3557;
+    display: flex;
+    justify-content: space-around;
+    height: 50vh;
+  }
+  .div-subprincipal-footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5vw;
+  }
+  .desenvolvedores-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25vw;
+    height: 10vh;
+    border-radius: 12px;
+    background-color: var(--branco);
+    margin-top: 2vw;
+  }
+  .redes-sociais-footer{
+    gap: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+  }
+  .img-redessociais-footer{
+    width: 12vw;
+    margin-top: 1.5vh;
+    margin-bottom: 2vh;
+  }
+  .tag-desen-footer{
+    color: var(--azul-escuro);
+    font-size: 2vw;
+    font-family: var(--texto-comum);
+  }
+  .div-empresas-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-block: 4vw;
+    width: 25vw;
+    height: 45vh;
+    border-radius: 10px;
+    background-color: var(--branco);
+    margin-top: 2%;
+  }
+  .logos-footer{
+    display: flex;
+    flex-direction: column;
+  }
+  .organizacao-mapa-footer{
+    display: flex;
+    justify-content: center;
+    gap: .5vw;
+  }
+  .mapa-navegação{
+    color: var(--branco);
+    font-family: var(--titulo);
+    font-size: 2.5vw;
+  }
+  .logoParceria-footer{
+    width: 12vw;
+  }
+  .opcoes-mapa-footer{
+    display: flex;
+    flex-direction: column;
+    font-family: var(--texto-comum);
+    margin-top: 1vw;
+    gap: 1vw;
+  }
+  .opcao-footer{
+    font-size: 1.8vw;
+    color: var(--branco);
+    font-family: "Ibarra Real Nova", serif;
+  }
+  .opcao-footer:visited{
+    color: white;
+  }
+  .opcao-footer:hover{
+    font-size: 1.5vw;
+    color: white;
+    border-radius: 5px;
+    padding: .5vw;
+    border: 1px solid #032D60;
+    background-color: #032D60;
+  }
+  .mapeamento-paginas-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5vh;
+    text-align: center;
+    gap: 1vw;
+  }
+  .titulo-mapeamento{
+    font-size: 5vw;
+    color: var(--branco);
+  }
+  .texto-mapeamento{
+    font-size: 3.5vw;
+    color: var(--branco);
+  }
+  .card {
+    width: 24vw;
+    height: 7vw;
+    background-color: var(--branco);
+    margin-top: 1vh;
+    margin-bottom: 2vh;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2vw;
+    gap: 1.5vw;
+    box-shadow: 10px 8px teal;
+  }
+  .socialContainer {
+    width: 6vw;
+    height: 9vh;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition-duration: .3s;
+  }
+  .containerOne:hover {
+    background-color: #d62976;
+    transition-duration: .3s;
+  }
+  .containerTwo:hover {
+    background-color: #00acee;
+    transition-duration: .3s;
+  }
+  .containerThree:hover {
+    background-color: #0072b1;
+    transition-duration: .3s;
+  }
+  .containerFour:hover {
+    background-color: #128C7E;
+    transition-duration: .3s;
+  }
+  .socialContainer:active {
+    transform: scale(0.9);
+    transition-duration: .3s;
+  }
+  .socialSvg {
+    width: 2.8vw;
+  }
+}
   

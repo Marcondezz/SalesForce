@@ -507,7 +507,8 @@
         color: #fff; /* Cor do texto ao passar o mouse */
     }
 }
-@media (min-width: 1441px) and (max-width: 1500px){
+
+@media (min-width: 1441px){
     .opcoes-logo-header{
         display: flex;
         justify-content: center;
@@ -518,11 +519,17 @@
         display: flex;
         justify-content: center;
         text-align: center;
-        width: 23.5vw;
-        font-size: 2rem;
+        width: 22vw;
+        font-size: 2.5rem;
         white-space: pre;
         color: var(--branco);
         font-family: var(--texto-comum);
+    }
+    .opcoes-header:hover{
+        color: var(--azul-escuro);
+        border: 2px solid var(--branco);
+        background-color: var(--branco);
+        padding: .5rem;
     }
     .menu-header{
         margin-left: 6vw;
@@ -547,5 +554,89 @@
         width: 20vw;
         margin-top: 1vh;
         margin-bottom: 1vh;
+    }
+    .hamburger {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        z-index: 4;
+      }
+      
+      .hamburger input {
+        display: none;
+      }
+      .logo-sales-force{
+        display: flex;
+        align-items: center;
+        margin-top: 2vh;
+        margin-left: 2vh;
+      }
+      .hamburger svg {
+        height: 3em;
+        font-size: 1.4em;
+        /* Define the transition for transforming the SVG */
+        transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+        margin-inline: 2vw;
+        z-index: 4;
+      }
+      
+      .line {
+        fill: none;
+        stroke: var(--branco);
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 3;
+        /* Define the transition for transforming the Stroke */
+        transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+                    stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      
+      .line-top-bottom {
+        stroke-dasharray: 12 63;
+      }
+      
+      .hamburger input:checked + svg {
+        transform: rotate(-45deg);
+      }
+      
+      .hamburger input:checked + svg .line-top-bottom {
+        stroke-dasharray: 20 300;
+        stroke-dashoffset: -32.42;
+      }
+      .nav-list {
+        display: none;
+        flex-direction: column;
+        background-color: #032D60; /* Cor de fundo do menu */
+        padding: 1vw;
+        position: absolute;
+        top: 10vh; /* Posição inicial do menu */
+        width: 10vw; /* Largura do menu */
+        z-index: 3;
+    }
+    
+    .nav-list.open {
+        display: flex;
+        align-items: center; 
+        margin-left: -75vw;
+        z-index: 3;
+    }
+    
+    .nav-item {
+        list-style-type: none;
+        margin-bottom: 10px;
+    }
+    
+    .nav-link {
+        color: #fff;
+        text-decoration: none;
+        transition: color 0.3s ease;
+        font-family: "Righteous", 'sans-serif';
+    }
+    
+    .nav-link:hover {
+        color: #fff; /* Cor do texto ao passar o mouse */
+    }
+    .nav-link:visited {
+        color: #fff; /* Cor do texto ao passar o mouse */
     }
 }
