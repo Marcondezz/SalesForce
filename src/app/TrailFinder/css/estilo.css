@@ -178,6 +178,10 @@
   button:hover {
     background-color: #bcbcdf;
   }
+  .interrogacaoTF{
+    width: 1rem;
+    margin-left: 4px;
+  }
   .secao-total{
     display: flex;
     justify-content: center;
@@ -195,7 +199,7 @@
 @media (min-width: 720px) and (max-width: 1024px){
   .card-formulario {
     width: 42vw;
-    height: 55vh;
+    height: 70vh;
     background: #e9e9f7;
     border: 1px solid white;
     box-shadow: 10px 10px 64px 0px rgba(180, 180, 207, 0.75);
@@ -248,7 +252,10 @@
     color: #7a7ab3;
     border: 1px solid #032d60;
   }
-  
+  .interrogacaoTF{
+    width: 1rem;
+    margin-left: 4px;
+  }
   .input:focus-visible {
     outline: 1px solid #aeaed6;
   }
@@ -295,8 +302,8 @@
 }
 @media (min-width: 1025px) and (max-width: 1440px){
   .card-formulario {
-    width: 42vw;
-    height: 75vh;
+    width: 43vw;
+    height: 78vh;
     background: #e9e9f7;
     border: 1px solid white;
     box-shadow: 10px 10px 64px 0px rgba(180, 180, 207, 0.75);
@@ -331,7 +338,6 @@
     font-weight: 500;
     color: white;
     border: none;
-    margin-left: 10%;
   }
   button:hover {
     background-color: #B2BAC8;
@@ -356,7 +362,10 @@
     color: #7a7ab3;
     border: 1px solid #032d60;
   }
-  
+  .interrogacaoTF{
+    width: 1rem;
+    margin-left: 4px;
+  }
   .input:focus-visible {
     outline: 1px solid #aeaed6;
   }
@@ -378,6 +387,7 @@
   .botao-submit{
     display: flex;
     justify-content: center;
+    align-items: center;
   }
   .mensagem-sucesso{
     display: flex;
@@ -388,7 +398,7 @@
 @media (min-width: 1441px){
   .card-formulario {
     width: 42vw;
-    height: 75vh;
+    height: 65vh;
     background: #e9e9f7;
     border: 1px solid white;
     box-shadow: 10px 10px 64px 0px rgba(180, 180, 207, 0.75);
@@ -423,7 +433,6 @@
     font-weight: 500;
     color: white;
     border: none;
-    margin-left: 10%;
   }
   button:hover {
     background-color: #B2BAC8;
@@ -450,8 +459,9 @@
     color: #7a7ab3;
     border: 1px solid #032d60;
   }
-  .interrogacao{
+  .interrogacaoTF{
     width: 1rem;
+    margin-left: 4px;
   }
   .input:focus-visible {
     outline: 1px solid #aeaed6;

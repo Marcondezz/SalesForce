@@ -100,6 +100,7 @@ const TrailFinder = () => {
                     <option value="Média">Média</option>
                     <option value="Grande">Grande</option>
                 </select>
+                <img className="interrogacaoTF" src={interrogacao.src} onClick={handleAlert1} />
                 </div>
                 <div className="field">
                 <label className="label-trailfinder" htmlFor="setor">Qual o setor da sua empresa:</label>
@@ -119,7 +120,6 @@ const TrailFinder = () => {
                     <option value="Varejo">Varejo</option>
                     <option value="Tecnologia">Tecnologia</option>
                 </select>
-                <img className="interrogacao" src={interrogacao.src} onClick={handleAlert1} />
                 </div>
                 <div className="botao-submit">
                     <button className="button-trailfinder" type="submit">ENVIE</button>
