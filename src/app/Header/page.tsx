@@ -27,7 +27,7 @@ const Header = () =>{
             <div className="opcoes-logo-header">
               <Link href="/Questionario"><h1 className="opcoes-header">TRAIL FINDER</h1></Link>
               <Link href="/Pagina_Inicial"><img className="LogoSalesForce-header" src={ Logo.src}/></Link>
-              <Link href="https://trailhead.salesforce.com/pt-BR" target="_blank"><h1 className="opcoes-header">TRAIL BLAZERS</h1></Link>
+              <Link href="https://trailhead.salesforce.com/pt-BR/trailblazercommunity" target="_blank"><h1 className="opcoes-header">TRAIL BLAZERS</h1></Link>
             </div>
           </div> 
           <div className={`nav-list ${menuOpen ? 'open' : ''}`}>

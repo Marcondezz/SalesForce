@@ -24,7 +24,7 @@ const Personagens = () => {
                     <div className="texto-personagens">
                             <h1 className="titulo-personagens">Einstein</h1>
                             <h2 className="subtitulo-personagens"><b>O gênio de todos</b></h2>
-                            <p className="texto-esquerda">Einstein é o cientista de dados da Salesforce. Nasceu em 2016 e foi criado com base em um dos maires gênios da hitória mundial.
+                            <p className="texto-esquerda">Einstein é o cientista de dados da Salesforce. Nasceu em 2016 e foi criado com base em um dos maiores gênios da história mundial.
                                  Além de ser rápido, ele é o cérebro por trás da inteligência artificial da empresa. 
                                  Tem um produto que leva seu nome: 
                                  uma plataforma unificada que identifica oportunidades de vendas, prevê resultados e 
@@ -41,7 +41,7 @@ const Personagens = () => {
                     <div className="texto-personagens">
                             <h1 className="titulo-personagens">APPY</h1>
                             <h2 className="subtitulo-personagens"><b>Sua guia no ecossistema de parceiros</b></h2>
-                            <p className="texto-esquerda">A Apy represent ISVs, parceiros e AppExchange. Ela surgiu em 2017, sabe muito sobre todas as coisas da
+                            <p className="texto-esquerda">A Appy represent ISVs, parceiros e AppExchange. Ela surgiu em 2017, sabe muito sobre todas as coisas da
                          Salesforce e é a mascote certa para ajudar na navegação do ecossistema do AppExchange para resolver desafios de negócios</p>
                             <p className="texto-esquerda">Ela também é considerada um conector, pois se não souber a resposta, ela usa sua extensa rede para conectar 
                         as pessoas certas e resolver seus problemas. 
