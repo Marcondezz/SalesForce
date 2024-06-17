@@ -458,8 +458,8 @@
     .significado-personagens{
         display: flex;
         justify-content: center;
-        width: 27rem;
-        font-size: 2vw;
+        width: 25rem;
+        font-size: 1.7vw;
         color: var(--azul-claro);
         display: flex;
         justify-content: center;
@@ -585,7 +585,7 @@
         font-family: var(--titulo);
     }
     .significado-personagens{
-        font-size: 2vw;
+        font-size: 1.7vw;
         color: var(--azul-claro);
         width: 40rem;
         display: flex;

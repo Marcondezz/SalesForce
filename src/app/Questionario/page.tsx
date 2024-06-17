@@ -20,7 +20,7 @@ const Questionario = () => {
                         <h3 className="texto-questionario">Faça o teste agora mesmo!</h3>
                         </div>
                         <div className="edicao-botao-questionario">
-                           <Link href={"/TrailFinder"}>
+                           <Link href= "/TrailFinder">
                             <button className="botao-questionario" ><b>Questionário</b>
                             </button></Link>
                         </div>

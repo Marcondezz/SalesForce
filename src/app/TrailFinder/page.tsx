@@ -19,11 +19,27 @@ const TrailFinder = () => {
         setData({
             ...data,
             [name]: event.target.value
-        })}
-    
+        })
+    }
+
     const handleForm = async (event:any) => {
         try {
             event.preventDefault();
+
+            // Verifica se todos os campos obrigatórios foram preenchidos
+            const formIsValid = Object.values(data).every(value => value !== '');
+            if (!formIsValid) {
+                alert('Por favor, preencha todos os campos obrigatórios.');
+                return;
+            }
+
+            // Verifica se o e-mail possui o formato correto
+            const emailIsValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(data.email);
+            if (!emailIsValid) {
+                alert('Por favor, insira um endereço de e-mail válido.');
+                return;
+            }
+
             const response = await fetch(`http://localhost:8080/projetoTeste/rest/trailFinder/inserir`, {
                 method: 'POST',
                 headers: {
@@ -31,7 +47,7 @@ const TrailFinder = () => {
                 },
                 body: JSON.stringify(data)
             });
-    
+
             if (response.ok) {
                 const text = await response.text();
                 const json = text ? JSON.parse(text) : {}; 
@@ -45,20 +61,14 @@ const TrailFinder = () => {
             console.error('Erro ao enviar formulário:', err);
         }
     }
-        function handleAlert1(){
-            alert(`Para Empresas do Tipo Serviços:
-                - Microempresa (ME): Até 9 empregados"
-                - Empresa de Pequeno Porte (EPP): De 10 a 49 empregados"
-                - Empresa de Médio Porte: De 50 a 99 empregados
-                - Grandes Empresas: 100 ou mais empregados
-                
-                Para Empresas do Tipo Indústria:
-                - Microempresa: Lucro menor ou igual a R$ 360 mil e com até 19 empregados
-                - Pequena empresa: Lucro maior que R$ 360 mil e menor ou igual a R$ 4,8 milhões e com até 99 empregados
-                - Média Empresa: Lucro maior que R$ 90 milhões e menor ou igual a R$ 300 milhões com até 499 empregados
-                - Grande empresa: Maior que R$ 300 milhões e com mais que 500 empregados`);
-        }
-    
+
+    function handleAlert1(){
+        alert(`Para Empresas do Tipo Serviços:
+            - Microempresa (ME): Até 9 empregados"
+            - Empresa de Pequeno Porte (EPP): De 10 a 49 empregados"
+            - Empresa de Médio Porte: De 50 a 99 empregados
+            - Grandes Empresas: 100 ou mais empregados`);
+    }
 
     return (
         <section className="secao-total">
@@ -72,55 +82,55 @@ const TrailFinder = () => {
                 </div>
                 <div className="field">
                     <label className="label-trailfinder" htmlFor="name">Qual é o seu Nome</label>
-                    <input className="input" name="name" type="text" placeholder="Nome" value={data.name} onChange={(e) => {handleFormEdit(e, "name")}}/>
+                    <input className="input" name="name" type="text" placeholder="Nome" value={data.name} onChange={(e) => {handleFormEdit(e, "name")}} required />
                 </div>
                 <div className="field">
                     <label className="label-trailfinder" htmlFor="email">Informe seu e-mail:</label>
-                    <input className="input" name="email" type="text" placeholder="E-mail" value={data.email} onChange={(e) => {handleFormEdit(e, "email")}}/>
+                    <input className="input" name="email" type="email" placeholder="E-mail" value={data.email} onChange={(e) => {handleFormEdit(e, "email")}} required />
                 </div>
                 <div className="field">
                     <label className="label-trailfinder" htmlFor="data">Data:</label>
-                    <input className="input" name="data" type="date" placeholder="Data" value={data.dataContato} onChange={(e) => {handleFormEdit(e, "data")}}/>
+                    <input className="input" name="data" type="date" placeholder="Data" value={data.dataContato} onChange={(e) => {handleFormEdit(e, "dataContato")}} required/>
                 </div>
                 <div className="field">
-                <label className="label-trailfinder" htmlFor="cargo">Qual seu cargo:</label>
-                <select id="cargo" name="cargo" value={data.cargo} onChange={(e) => {handleFormEdit(e, "cargo")}}>
-                    <option value="">Qual?</option>
-                    <option value="Assistente">Assistente</option>
-                    <option value="Diretor">Diretor</option>
-                    <option value="Estagiário">Estagiário</option>
-                    <option value="Gerente">Gerente</option>
-                    <option value="Analista">Analista</option>
-                </select>
+                    <label className="label-trailfinder" htmlFor="cargo">Qual seu cargo:</label>
+                    <select id="cargo" name="cargo" value={data.cargo} onChange={(e) => {handleFormEdit(e, "cargo")}} required>
+                        <option value=""></option>
+                        <option value="Assistente">Assistente</option>
+                        <option value="Diretor">Diretor</option>
+                        <option value="Estagiário">Estagiário</option>
+                        <option value="Gerente">Gerente</option>
+                        <option value="Analista">Analista</option>
+                    </select>
                 </div>
                 <div className="field">
-                <label className="label-trailfinder" htmlFor="tipoEmpresa">Qual o tamanho da sua empresa:</label>
-                <select id="tipoEmpresa" name="tipoEmpresa" value={data.tipoEmpresa} onChange={(e) => {handleFormEdit(e, "tipoEmpresa")}}>
-                    <option value="">Qual?</option>
-                    <option value="Pequena">Pequena</option>
-                    <option value="Média">Média</option>
-                    <option value="Grande">Grande</option>
-                </select>
-                <img className="interrogacaoTF" src={interrogacao.src} onClick={handleAlert1} />
+                    <label className="label-trailfinder" htmlFor="tipoEmpresa">Qual o tamanho da sua empresa:</label>
+                    <select id="tipoEmpresa" name="tipoEmpresa" value={data.tipoEmpresa} onChange={(e) => {handleFormEdit(e, "tipoEmpresa")}} required>
+                        <option value=""></option>
+                        <option value="Pequena">Pequena</option>
+                        <option value="Média">Média</option>
+                        <option value="Grande">Grande</option>
+                    </select>
+                    <img className="interrogacaoTF" src={interrogacao.src} onClick={handleAlert1} />
                 </div>
                 <div className="field">
-                <label className="label-trailfinder" htmlFor="setor">Qual o setor da sua empresa:</label>
-                <select id="setor" name="setor" value={data.setor} onChange={(e) => {handleFormEdit(e, "setor")}}>
-                    <option value="">Qual?</option>
-                    <option value="Automotivo">Automotivo</option>
-                    <option value="Comunicações">Comunicações</option>
-                    <option value="Bens de Consumo">Bens de Consumo</option>
-                    <option value="Educação">Educação</option>
-                    <option value="Energia & Utilities">Energia & Utilities</option>
-                    <option value="Serviços Financeiros">Serviços Financeiros</option>
-                    <option value="Saúde & Ciências da Vida">Saúde & Ciências da Vida</option>
-                    <option value="Manufatura">Manufatura</option>
-                    <option value="Mídia">Mídia</option>
-                    <option value="Sem fins lucrativos">Sem fins lucrativos</option>
-                    <option value="Setor Público">Setor Público</option>
-                    <option value="Varejo">Varejo</option>
-                    <option value="Tecnologia">Tecnologia</option>
-                </select>
+                    <label className="label-trailfinder" htmlFor="setor">Qual o setor da sua empresa:</label>
+                    <select id="setor" name="setor" value={data.setor} onChange={(e) => {handleFormEdit(e, "setor")}} required>
+                        <option value=""></option>
+                        <option value="Automotivo">Automotivo</option>
+                        <option value="Comunicações">Comunicações</option>
+                        <option value="Bens de Consumo">Bens de Consumo</option>
+                        <option value="Educação">Educação</option>
+                        <option value="Energia & Utilities">Energia & Utilities</option>
+                        <option value="Serviços Financeiros">Serviços Financeiros</option>
+                        <option value="Saúde & Ciências da Vida">Saúde & Ciências da Vida</option>
+                        <option value="Manufatura">Manufatura</option>
+                        <option value="Mídia">Mídia</option>
+                        <option value="Sem fins lucrativos">Sem fins lucrativos</option>
+                        <option value="Setor Público">Setor Público</option>
+                        <option value="Varejo">Varejo</option>
+                        <option value="Tecnologia">Tecnologia</option>
+                    </select>
                 </div>
                 <div className="botao-submit">
                     <button className="button-trailfinder" type="submit">ENVIE</button>

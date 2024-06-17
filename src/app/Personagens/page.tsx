@@ -24,12 +24,12 @@ const Personagens = () => {
                     <div className="texto-personagens">
                             <h1 className="titulo-personagens">Einstein</h1>
                             <h2 className="subtitulo-personagens"><b>O gênio de todos</b></h2>
-                            <p className="texto-esquerda">Einstein é o cientista de dados da Salsforce. Nasceu em 2016 e fo criado com bse em um dos maires gênios da hitória mundial.
-                                 Além de suer rápido, ele é o cérebro por trás da inteligência artificial da empresa. 
+                            <p className="texto-esquerda">Einstein é o cientista de dados da Salesforce. Nasceu em 2016 e foi criado com base em um dos maires gênios da hitória mundial.
+                                 Além de ser rápido, ele é o cérebro por trás da inteligência artificial da empresa. 
                                  Tem um produto que leva seu nome: 
                                  uma plataforma unificada que identifica oportunidades de vendas, prevê resultados e 
                                  faz recomendações inteligentes. </p>
-                            <p className="texto-esquerda">É um eterno solcionador de problemas e ajuda você a aprender mais sobre seus clientes. 
+                            <p className="texto-esquerda">É um eterno solucionador de problemas e ajuda você a aprender mais sobre seus clientes. 
                                  Brilhante e altruista, 
                                  Einstein está sempre pronto para ajudá-lo a se tornar mais experiente e inovador. 
                                 Outros produtos que ele oferece são o Einstein Sales Cloud e Einstein Analytics.</p>
@@ -40,7 +40,7 @@ const Personagens = () => {
                     <a className="organizacao-personagens"><img src={ Appy.src } className="personagem-personagens"/></a>
                     <div className="texto-personagens">
                             <h1 className="titulo-personagens">APPY</h1>
-                            <h2 className="subtitulo-personagens"><b>Sua guia no ecossistema de parciros</b></h2>
+                            <h2 className="subtitulo-personagens"><b>Sua guia no ecossistema de parceiros</b></h2>
                             <p className="texto-esquerda">A Apy represent ISVs, parceiros e AppExchange. Ela surgiu em 2017, sabe muito sobre todas as coisas da
                          Salesforce e é a mascote certa para ajudar na navegação do ecossistema do AppExchange para resolver desafios de negócios</p>
                             <p className="texto-esquerda">Ela também é considerada um conector, pois se não souber a resposta, ela usa sua extensa rede para conectar 
