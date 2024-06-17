@@ -7,6 +7,7 @@ interface dados{
     id: number;
     src: string;
     text: string;
+    href: string;
 }
 const sucesso = () =>{
     return(
@@ -26,9 +27,9 @@ const sucesso = () =>{
                                     
                                 <div className="imagens-sucesso">
                                     <div className="layout">
-                                        <a className="layout-imagem-sucesso"><img className="formatacao-imagem-sucesso" src={item2.src} /></a>
+                                        <a className="layout-imagem-sucesso" href={item2.href} target="_blank"><img className="formatacao-imagem-sucesso" src={item2.src} /></a>
                                         <ul className="texto-imagem-paginaInicial">
-                                            <Link href='/Personagens'><li className="texto-imagem">{item2.text}</li></Link>
+                                            <li className="texto-imagem">{item2.text}</li>
                                         </ul>
                                     </div>
                                 </div>

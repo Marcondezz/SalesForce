@@ -7,10 +7,11 @@ const TrailFinder = () => {
     const [data, setData] = useState({
         name: '',
         email: '',
-        data:'',
-        cargo: '',
+        cargo:'',
         tipoEmpresa: '',
-        setor: ''
+        setor: '',
+        dataContato: '',
+        probabilidadeContratacao: 0.0
     });
     const [formSubmitted, setFormSubmitted] = useState(false);
 
@@ -79,7 +80,7 @@ const TrailFinder = () => {
                 </div>
                 <div className="field">
                     <label className="label-trailfinder" htmlFor="data">Data:</label>
-                    <input className="input" name="data" type="date" placeholder="Data" value={data.data} onChange={(e) => {handleFormEdit(e, "data")}}/>
+                    <input className="input" name="data" type="date" placeholder="Data" value={data.dataContato} onChange={(e) => {handleFormEdit(e, "data")}}/>
                 </div>
                 <div className="field">
                 <label className="label-trailfinder" htmlFor="cargo">Qual seu cargo:</label>
@@ -93,7 +94,7 @@ const TrailFinder = () => {
                 </select>
                 </div>
                 <div className="field">
-                <label className="label-trailfinder" htmlFor="tipoEmpresa">Qual o tipo da sua Empresa:</label>
+                <label className="label-trailfinder" htmlFor="tipoEmpresa">Qual o tamanho da sua empresa:</label>
                 <select id="tipoEmpresa" name="tipoEmpresa" value={data.tipoEmpresa} onChange={(e) => {handleFormEdit(e, "tipoEmpresa")}}>
                     <option value="">Qual?</option>
                     <option value="Pequena">Pequena</option>
